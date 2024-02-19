@@ -1,5 +1,5 @@
 console.log('connect');
 
-function test(){
-    alert('successfully connect');
+function modal(){
+    console.log('button click');
 }
