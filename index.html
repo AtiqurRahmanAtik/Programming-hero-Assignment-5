@@ -245,7 +245,7 @@
                 <div>
                   <button class="btn text-[#1DD100]">
                     <img src="./images/bus-icon.png" alt="" />
-                    <span id="">8</span> Seats left
+                    <span id="seat_8">8</span> Seats left
                   </button>
                 </div>
               </div>
@@ -315,7 +315,7 @@
 
                 <div>
                   <h1 class="text-2xl font-bold text-[#030712]">
-                    <span id="">550</span> Taka
+                    <span id="perSeat">550</span> Taka
                   </h1>
                   <p class="text-xl text-[#03071299]">per seat</p>
                 </div>
@@ -366,14 +366,21 @@
 
             <!--seat section-->
             <div class="flex justify-between">
+
               <!--left-->
               <div class="space-y-5">
                 <div class="flex items-center gap-6">
                   <div><h2>A</h2></div>
 
                   <div class="flex gap-8">
-                    <button class="btn">A1</button>
-                    <button class="btn">A2</button>
+                    <div>
+
+                      <button class="button btn">A1</button>
+                    </div>
+                    <div>
+
+                      <button class="button btn">A2</button>
+                    </div>
                   </div>
                 </div>
 
@@ -381,8 +388,12 @@
                   <div><h2>B</h2></div>
 
                   <div class="flex gap-8">
-                    <button class="btn">B1</button>
-                    <button class="btn">B2</button>
+                    <div>
+                      <button class="button btn">B1</button>
+                    </div>
+                   <div>
+                    <button class="button btn">B2</button>
+                   </div>
                   </div>
                 </div>
               </div>
@@ -391,15 +402,25 @@
               <div class="space-y-5">
                 <div class="flex items-center gap-6">
                   <div class="flex gap-8">
-                    <button class="btn">A3</button>
-                    <button class="btn">A4</button>
+                    <div>
+                      <button class="button btn">A3</button>
+                    </div>
+                   
+                    <div>
+                      <button class="button btn">A4</button>
+                    </div>
                   </div>
                 </div>
 
                 <div class="flex items-center gap-6">
                   <div class="flex gap-8">
-                    <button class="btn">B3</button>
-                    <button class="btn">B4</button>
+                    <div>
+                      <button class="button btn">B3</button>
+                    </div>
+                    
+                    <div>
+                      <button class="button btn">B4</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -422,7 +443,7 @@
                 <div>
                   <h2 class="text-xl font-medium text-[#030712]">
                     Seat
-                    <span id="" class="bg-[#1DD100] rounded-xl px-5">2</span>
+                    <span id="totalSeat" class="bg-[#1DD100] rounded-xl px-5">0</span>
                   </h2>
                 </div>
 
@@ -435,9 +456,9 @@
                 </div>
               </div>
 
-              <div class="flex justify-around py-4 gap-x-28">
+              <!-- <div class="flex justify-around py-4 gap-x-28">
                 <div>
-                  <h2 class="text-xl font-medium text-[#030712]">C2</h2>
+                  <h2 id="c2" class="text-xl font-medium text-[#030712]">C2</h2>
                 </div>
 
                 <div>
@@ -461,8 +482,12 @@
                 <div>
                   <h2 class="text-xl font-medium text-[#030712]">550</h2>
                 </div>
-              </div>
+              </div> -->
+              
 
+              <ul id="ul">
+
+              </ul>
               <hr class="border-b-4 my-6" />
 
               <!--total Price-->
@@ -475,7 +500,7 @@
 
                 <div>
                   <h2 class="text-xl font-medium text-[#030712]">
-                    BDT <span id="">1100</span>
+                    BDT <span id="totalprice">0</span>
                   </h2>
                 </div>
               </div>
@@ -502,7 +527,7 @@
 
                 <div>
                   <h2 class="text-xl font-medium text-[#030712]">
-                    BDT <span id>1100</span>
+                    BDT <span id="grandtotal">0</span>
                   </h2>
                 </div>
               </div>

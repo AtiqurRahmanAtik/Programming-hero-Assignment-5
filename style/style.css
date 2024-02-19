@@ -135,3 +135,9 @@
 .circle2{
   right: -25px;
 }
+
+li{
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
