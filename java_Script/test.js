@@ -1,6 +1,5 @@
 
 
-
 const button = document.getElementsByClassName('button');
 
 let count= 8;
@@ -42,10 +41,7 @@ for(let btn of button){
 
 
 
-    //  let y = document.getElementById('button').innerText;
-    // //  console.log(y);
-    //change kora labge 
-    //   document.getElementById('c2').innerText=nameOfSeat;
+  //create li and append ul
     
         let ul = document.getElementById('ul');
 
@@ -67,7 +63,6 @@ for(let btn of button){
 
 
    
-
 
     //toal price
     let totalPrice = document.getElementById('totalprice').innerHTML;
@@ -94,7 +89,7 @@ console.log(TotalGrandTotal);
 
 
 
-//get  input feild
+//get  input field and apply button
 
 
 document.getElementById('apply').addEventListener('click',function(){
@@ -167,10 +162,8 @@ document.getElementById('apply').addEventListener('click',function(){
     discStyle.style.fontFamily='Fantasy';
   }
 
+
 })
-
-
-
 
 
 
