@@ -94,6 +94,86 @@ console.log(TotalGrandTotal);
 
 
 
+//get  input feild
+
+
+document.getElementById('apply').addEventListener('click',function(){
+
+  let applyValue = document.getElementById('input_feild').value;
+  console.log(applyValue);
+
+
+  if(applyValue =='Couple 20' ){
+
+    let discount = TotalGrandTotal * 20 /100
+    console.log(discount);
+
+    let discStyle = document.getElementById('a');
+    discStyle.innerText = 'Discount : '+ discount +" BDT";
+
+    //discount color style
+    discStyle.style.color= 'red';
+    discStyle.style.fontSize= '1.4rem';
+    discStyle.style.fontFamily='Fantasy';
+    
+    
+   //Grand total discount
+    let GrandTotalDiscount =  TotalGrandTotal - discount ;
+    console.log('total discount : ',GrandTotalDiscount)
+    document.getElementById('grandtotal').innerText= GrandTotalDiscount;
+
+    //apply input feild
+    let a  = document.getElementById('applyBtnHidden');
+    let hide = a.style.display='none';
+    console.log(hide);
+
+  }
+
+  else if(applyValue =='NEW15'){
+
+    let discount = TotalGrandTotal * 15 /100;
+    console.log(discount);
+
+    let discStyle = document.getElementById('a');
+    discStyle.innerText = 'Discount : '+ discount +" BDT";
+    
+    //discount color style
+    discStyle.style.color= 'red';
+    discStyle.style.fontSize= '1.4rem';
+    discStyle.style.fontFamily='Fantasy';
+
+     //Grand total discount
+    let GrandTotalDiscount = TotalGrandTotal - discount;
+    console.log(GrandTotalDiscount);
+     document.getElementById('grandtotal').innerText= GrandTotalDiscount;
+
+     //apply input feild
+     let a  = document.getElementById('applyBtnHidden');
+     let hide = a.style.display='none';
+     console.log(hide);
+    
+  }
+
+  else{
+    // document.getElementById('a').innerText='No discount ';
+
+
+    let discStyle = document.getElementById('a');
+    discStyle.innerText = 'No Discount';
+    
+    //discount color style
+    discStyle.style.color= 'red';
+    discStyle.style.fontSize= '1.4rem';
+    discStyle.style.fontFamily='Fantasy';
+  }
+
+})
+
+
+
+
+
+
     })
 }
 
